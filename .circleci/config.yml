@@ -27,3 +27,4 @@ workflows:
   my-pipeline:
     jobs:
       - build-and-push
+# end
