@@ -27,6 +27,4 @@ workflows:
   my-pipeline:
     jobs:
       - node/test
-      - build-and-push:
-          branches:
-            only: master
+      - build-and-push
