@@ -27,8 +27,6 @@ workflows:
   my-pipeline:
     jobs:
       - build-and-push:
-          requires:
-            - node/test
           filters:
             branches:
               only:
