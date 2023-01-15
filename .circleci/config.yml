@@ -27,10 +27,6 @@ workflows:
   my-pipeline:
     jobs:
       - node/test
-      - build-and-push
-          filters:
-            requires:
-              - node/test
-            branches:
-              only:
-                - master
+      - build-and-push:
+          branches:
+            only: master
